@@ -15,94 +15,139 @@ namespace PROG7311_Part2
     {
 
         /// <summary>
-        /// form1 control.
+        /// lblWelcome control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Label lblWelcome;
 
         /// <summary>
-        /// ckbProduct control.
+        /// lblUserLoginName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox ckbProduct;
+        protected global::System.Web.UI.WebControls.Label lblUserLoginName;
 
         /// <summary>
-        /// lblProductname control.
+        /// vieFarmerForm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblProductname;
+        protected global::System.Web.UI.HtmlControls.HtmlForm vieFarmerForm;
 
         /// <summary>
-        /// txtProductname control.
+        /// lblerror control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtProductname;
+        protected global::System.Web.UI.WebControls.Label lblerror;
 
         /// <summary>
-        /// ckbDate control.
+        /// lblFarmerUsername control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox ckbDate;
+        protected global::System.Web.UI.WebControls.Label lblFarmerUsername;
 
         /// <summary>
-        /// lblDateRange control.
+        /// ddlFarmerUsername control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDateRange;
+        protected global::System.Web.UI.WebControls.DropDownList ddlFarmerUsername;
 
         /// <summary>
-        /// lblFirstDate control.
+        /// lblFilterProdType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblFirstDate;
+        protected global::System.Web.UI.WebControls.Label lblFilterProdType;
 
         /// <summary>
-        /// txtFirstDate control.
+        /// ddlProdType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFirstDate;
+        protected global::System.Web.UI.WebControls.DropDownList ddlProdType;
 
         /// <summary>
-        /// lblSecondDate control.
+        /// lblMinDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSecondDate;
+        protected global::System.Web.UI.WebControls.Label lblMinDate;
 
         /// <summary>
-        /// txtSecondDate control.
+        /// txtMinDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSecondDate;
+        protected global::System.Web.UI.WebControls.TextBox txtMinDate;
+
+        /// <summary>
+        /// revMinDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revMinDate;
+
+        /// <summary>
+        /// lblMaxDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMaxDate;
+
+        /// <summary>
+        /// txtMaxDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtMaxDate;
+
+        /// <summary>
+        /// revMaxDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revMaxDate;
+
+        /// <summary>
+        /// cvDateRange control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator cvDateRange;
 
         /// <summary>
         /// btnFilter control.
@@ -114,12 +159,30 @@ namespace PROG7311_Part2
         protected global::System.Web.UI.WebControls.Button btnFilter;
 
         /// <summary>
-        /// GridView1 control.
+        /// btnResetTable control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.Button btnResetTable;
+
+        /// <summary>
+        /// lblAdded control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblAdded;
+
+        /// <summary>
+        /// gvFarmerProducts control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvFarmerProducts;
     }
 }

@@ -15,13 +15,13 @@ namespace PROG7311_Part2
     {
 
         /// <summary>
-        /// Label3 control.
+        /// lblLoginError control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
+        protected global::System.Web.UI.WebControls.Label lblLoginError;
 
         /// <summary>
         /// lblUsername control.
@@ -42,13 +42,13 @@ namespace PROG7311_Part2
         protected global::System.Web.UI.WebControls.TextBox txtUserName;
 
         /// <summary>
-        /// Value1RequiredValidator control.
+        /// rfvUsername control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator Value1RequiredValidator;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvUsername;
 
         /// <summary>
         /// lblPassword control.
@@ -69,13 +69,13 @@ namespace PROG7311_Part2
         protected global::System.Web.UI.WebControls.TextBox txtPassword;
 
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// rfvPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvPassword;
 
         /// <summary>
         /// btnSubmit control.

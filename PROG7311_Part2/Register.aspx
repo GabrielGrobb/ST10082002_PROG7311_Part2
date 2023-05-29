@@ -1,8 +1,11 @@
 ﻿<%@ Page Title="Register" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="PROG7311_Part2.Register" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %>.</h2>
+    <br/><br/>
+    <h2>Register</h2>
+    <br/>
     <h4>Please Provide Your Credentials to Register an Account</h4>
+    <br/>
     <p>
         <asp:Label ID="lblEmail" Text="Enter Your Email:" runat="server"></asp:Label>
         <br/><br/>

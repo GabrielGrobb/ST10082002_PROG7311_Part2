@@ -1,0 +1,41 @@
+﻿body {
+    margin:0;
+    padding:0;
+}
+section {
+    width:100vw;
+    height:100vh;
+    background-image:url(Images/vineyards.jpg);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:white;
+}
+.sec2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+    .sec2 .container {
+        width:45vw;
+        height:66vw;
+    }
+
+    .sec2 .social {
+        padding-left:6.5vw;
+        padding-top:7vh;
+    }
+
+.content h1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left:7vw
+}
+

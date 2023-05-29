@@ -11,35 +11,26 @@ namespace PROG7311_Part2
 {
 
 
-    public partial class FarmerPage
+    public partial class AddNewFarmerPage
     {
 
         /// <summary>
-        /// lblLoginUser control.
+        /// AddNewFarmer control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLoginUser;
+        protected global::System.Web.UI.HtmlControls.HtmlForm AddNewFarmer;
 
         /// <summary>
-        /// addProductForm control.
+        /// lblSuccess control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm addProductForm;
-
-        /// <summary>
-        /// lblerror control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblerror;
+        protected global::System.Web.UI.WebControls.Label lblSuccess;
 
         /// <summary>
         /// lblProdCode control.
@@ -51,121 +42,121 @@ namespace PROG7311_Part2
         protected global::System.Web.UI.WebControls.Label lblProdCode;
 
         /// <summary>
-        /// txtProdCode control.
+        /// txtFarmerName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtProdCode;
+        protected global::System.Web.UI.WebControls.TextBox txtFarmerName;
 
         /// <summary>
-        /// rfvProdCode control.
+        /// rfvFarmName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvProdCode;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvFarmName;
 
         /// <summary>
-        /// revProdCode control.
+        /// revFarmName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator revProdCode;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revFarmName;
 
         /// <summary>
-        /// lblProdName control.
+        /// lblFarmerSurname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblProdName;
+        protected global::System.Web.UI.WebControls.Label lblFarmerSurname;
 
         /// <summary>
-        /// txtProdName control.
+        /// txtFarmerSurname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtProdName;
+        protected global::System.Web.UI.WebControls.TextBox txtFarmerSurname;
 
         /// <summary>
-        /// rfvProdName control.
+        /// rfvFarmerSurname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvProdName;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvFarmerSurname;
 
         /// <summary>
-        /// revProdName control.
+        /// revFarmerSurname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator revProdName;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revFarmerSurname;
 
         /// <summary>
-        /// lblProdType control.
+        /// lblFarmerDOB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblProdType;
+        protected global::System.Web.UI.WebControls.Label lblFarmerDOB;
 
         /// <summary>
-        /// txtProdType control.
+        /// txtCalenderDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtProdType;
+        protected global::System.Web.UI.WebControls.TextBox txtCalenderDate;
 
         /// <summary>
-        /// rfvProdType control.
+        /// rfvCalenderDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvProdType;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCalenderDate;
 
         /// <summary>
-        /// revProdType control.
+        /// revCalenderDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator revProdType;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revCalenderDate;
 
         /// <summary>
-        /// lblProdPrice control.
+        /// lblFarmerCell control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblProdPrice;
+        protected global::System.Web.UI.WebControls.Label lblFarmerCell;
 
         /// <summary>
-        /// txtProdPrice control.
+        /// txtFarmerCell control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtProdPrice;
+        protected global::System.Web.UI.WebControls.TextBox txtFarmerCell;
 
         /// <summary>
         /// rfvProdPrice control.
@@ -186,120 +177,174 @@ namespace PROG7311_Part2
         protected global::System.Web.UI.WebControls.RegularExpressionValidator revProdPrice;
 
         /// <summary>
-        /// lblProdQuant control.
+        /// lblFarmerEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblProdQuant;
+        protected global::System.Web.UI.WebControls.Label lblFarmerEmail;
 
         /// <summary>
-        /// txtProdQuant control.
+        /// txtFarmerEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtProdQuant;
+        protected global::System.Web.UI.WebControls.TextBox txtFarmerEmail;
 
         /// <summary>
-        /// rfvProdQuant control.
+        /// rfvFarmerEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvProdQuant;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvFarmerEmail;
 
         /// <summary>
-        /// rvProdQuant control.
+        /// revFarmerEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RangeValidator rvProdQuant;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revFarmerEmail;
 
         /// <summary>
-        /// lblProdDate control.
+        /// lblErrorLogin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblProdDate;
+        protected global::System.Web.UI.WebControls.Label lblErrorLogin;
 
         /// <summary>
-        /// txtProdDate control.
+        /// lblError control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtProdDate;
+        protected global::System.Web.UI.WebControls.Label lblError;
 
         /// <summary>
-        /// rfvProdDate control.
+        /// lblUsername control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvProdDate;
+        protected global::System.Web.UI.WebControls.Label lblUsername;
 
         /// <summary>
-        /// revProdDate1 control.
+        /// txtFarmerUsername control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator revProdDate1;
+        protected global::System.Web.UI.WebControls.TextBox txtFarmerUsername;
 
         /// <summary>
-        /// cvProdDate control.
+        /// rfvUsername control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator cvProdDate;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvUsername;
 
         /// <summary>
-        /// btnAddProduct control.
+        /// revUsername control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAddProduct;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revUsername;
 
         /// <summary>
-        /// btnAddNewProduct control.
+        /// lblFarmerPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAddNewProduct;
+        protected global::System.Web.UI.WebControls.Label lblFarmerPassword;
 
         /// <summary>
-        /// lblAdded control.
+        /// txtFarmerPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAdded;
+        protected global::System.Web.UI.WebControls.TextBox txtFarmerPassword;
 
         /// <summary>
-        /// gvProduct control.
+        /// rfvFarmerPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvProduct;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvFarmerPassword;
+
+        /// <summary>
+        /// revFarmerPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revFarmerPassword;
+
+        /// <summary>
+        /// lblFarmerConPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblFarmerConPassword;
+
+        /// <summary>
+        /// txtFarmerConPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtFarmerConPassword;
+
+        /// <summary>
+        /// rfvConPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvConPassword;
+
+        /// <summary>
+        /// revConPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revConPassword;
+
+        /// <summary>
+        /// submitButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button submitButton;
     }
 }

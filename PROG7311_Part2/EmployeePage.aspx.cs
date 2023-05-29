@@ -11,72 +11,105 @@ namespace PROG7311_Part2
 {
     public partial class EmployeePage : System.Web.UI.Page
     {
-        private string dbConnect = Properties.Resources.dbConnect;
-
+        /// creating a new instance of the database controller class.
         private static DB_Controller mydb = new DB_Controller();
 
+        //.............................................................................//
+
+        #region /// Page Load Method (Jadav ,2015)
         protected void Page_Load(object sender, EventArgs e)
         {
+            /// Creating a session for the logged-in farmer (Jadav ,2015).
+            lblUserLoginName.Text = Session["id"].ToString();
+
             if (!IsPostBack)
             {
-                DisplayFarmer();
-                //ckbProduct_CheckedChanged();
+                /// farmer username clearing the dropdown list.
+                ddlFarmerUsername.Items.Clear();
 
+                /// populating the farmer username dropdown.
+                mydb.PopulateFarmerNameDropDown(ddlFarmerUsername);
+
+                /// populating the product type dropdown.
+                mydb.PopulateProductTypeDropDown(ddlProdType);
+
+                /// call the display farmer method
+                DisplayFarmer();
             }
         }
 
+        #endregion
+
+        //.............................................................................//
+
+        #region /// method to display the gridview.
         protected void DisplayFarmer()
         {
-            DataTable dt = new DataTable();
-
-            using (SqlConnection dbConnection = new SqlConnection(dbConnect))
-            {
-                SqlDataAdapter adapt = new SqlDataAdapter("Select F.FARMER_NAME, F.FARMER_SURNAME,F.FARMER_CELL, P.PRODUCT_CODE, P.PRODUCT_NAME,P.PRODUCT_PRICE, P.PRODUCT_QUANT, P.PRODUCT_DATE From FARMPROD FP, PRODUCT P, FARMER F Where FP.PRODUCT_CODE = P.PRODUCT_CODE AND F.USERNAME = FP.USERNAME", dbConnection);
-                dbConnection.Open();
-                adapt.Fill(dt);
-                dbConnection.Close();
-
-                if (dt.Rows.Count > 0)
-                {
-                    GridView1.DataSource = dt;
-                    GridView1.DataBind();
-                }
-            }
+            mydb.PopulateGridview(gvFarmerProducts);
         }
 
+        #endregion
+
+        //.............................................................................//
+
+        #region /// Button to filter the gridview.
         protected void btnFilter_Click(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable();
-            string productName = txtProductname.Text.Trim();
-
-            using (SqlConnection dbConnection = new SqlConnection(dbConnect))
+            /// if-statement to check if the date range is empty.
+            if (string.IsNullOrEmpty(txtMinDate.Text) && string.IsNullOrEmpty(txtMaxDate.Text))
             {
-                SqlDataAdapter adapt = new SqlDataAdapter("Select F.FARMER_NAME, F.FARMER_SURNAME,F.FARMER_CELL, P.PRODUCT_CODE, P.PRODUCT_NAME,P.PRODUCT_PRICE, P.PRODUCT_QUANT, P.PRODUCT_DATE " +
-                           "From FARMPROD FP, PRODUCT P, FARMER F Where FP.PRODUCT_CODE = P.PRODUCT_CODE AND F.USERNAME = FP.USERNAME AND P.PRODUCT_NAME ='" + productName + "';", dbConnection);
-                dbConnection.Open();
-                adapt.Fill(dt);
-                dbConnection.Close();
-
-
-                GridView1.DataSource = dt;
-                GridView1.DataBind();
+                /// filter by product type
+                mydb.FilterGridViewProdType(ddlFarmerUsername, gvFarmerProducts, ddlProdType);
             }
+            else
+            {
+                /// filter by date range
+                mydb.FilterGridViewDate(ddlFarmerUsername, gvFarmerProducts, txtMinDate.Text, txtMaxDate.Text);
+            }
+
+            /// sets the error label text to empty.
+            lblerror.Text = "";
         }
 
-        protected void ckbProduct_CheckedChanged(object sender, EventArgs e)
+        #endregion
+
+        //.............................................................................//
+
+        #region /// A logout button to end the farmer session (Jadav ,2015).
+        protected void btnLogout_Click(object sender, EventArgs e) 
         {
-            txtProductname.Enabled = ckbProduct.Checked;
-            ckbDate.Checked = !ckbProduct.Checked;
-            txtFirstDate.Enabled = txtSecondDate.Enabled = ckbDate.Checked;
-            btnFilter.Enabled = ckbProduct.Checked || ckbDate.Checked;
+            Session.RemoveAll();
+            Response.Redirect("Login.aspx");
         }
 
-        protected void ckbDate_CheckedChanged(object sender, EventArgs e)
+        #endregion
+
+        //.............................................................................//
+
+        #region /// A button to reset the gridview to default.
+        protected void btnResetTable_Click(object sender, EventArgs e)
         {
-            txtFirstDate.Enabled = txtSecondDate.Enabled = ckbDate.Checked;
-            ckbProduct.Checked = !ckbDate.Checked;
-            txtProductname.Enabled = ckbProduct.Checked;
-            //btnFilter.Enabled = ckbProduct.Checked;
+            txtMinDate.Text = ""; /// sets the text to empty.
+            txtMaxDate.Text = ""; /// sets the text to empty.
+            lblerror.Text = "";   /// sets the text to empty.
+            mydb.PopulateGridview(gvFarmerProducts); /// Populating the gridview. 
         }
+
+        #endregion
+
+        //.............................................................................//
     }
 }
+#region /// REFERENCES - CODE ATTRIBUTION:
+/* 
+ * 
+
+Aurthor:  Nilesh Jadav
+Webisite: C# corner, 2015/06/15. How to Make a Login Form Using Session in ASP.Net C#. [Online]
+Accessed on: 2023/05/29
+URL: https://www.c-sharpcorner.com/UploadFile/009464/how-to-make-a-login-form-using-session-in-Asp-Net-C-Sharp/
+
+ */
+#endregion
+
+//.........................................EndOfFile................................................//
