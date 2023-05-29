@@ -60,7 +60,9 @@ Farmer roles: Username - Farmer1
 	      Password - Farmer3
 
 The bootstrap of the application was altered. The website which was used: https://bootswatch.com/minty/
-This allowed for customized buttons, navigation menu, colours and forms.
+This allowed for customized buttons, navigation menu, colours and forms to load from the left and right
+hand sides of the screen.
+
 
 The database is of type .mdf and it is located with the App_Data folder.
 There is a folder named Images which is used for the image on the home screen.
