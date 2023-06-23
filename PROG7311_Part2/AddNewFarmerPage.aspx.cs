@@ -61,18 +61,18 @@ namespace PROG7311_Part2
                 myDB.addNewFarmer(txtFarmerName.Text, txtFarmerSurname.Text, txtCalenderDate.Text, txtFarmerCell.Text, txtFarmerEmail.Text, txtFarmerUsername.Text, lblError);
                 lblSuccess.Text = "Farmer Successfully Added!"; /// A label that indicates a successful capture.
                 lblSuccess.Visible = true; /// Setting the label to visable.
-                lblError.Text = ""; /// Clearing the error label.
-                lblErrorLogin.Text = ""; /// Clearing the error label.
+                lblError.Text = string.Empty; /// Clearing the error label.
+                lblErrorLogin.Text = string.Empty; /// Clearing the error label.
 
                 /// Setting the text to empty.
-                txtFarmerName.Text = "";
-                txtFarmerSurname.Text = "";
-                txtCalenderDate.Text = "";
-                txtFarmerCell.Text = "";
-                txtFarmerEmail.Text = "";
-                txtFarmerUsername.Text = "";
-                txtFarmerPassword.Text = "";
-                txtFarmerConPassword.Text = "";
+                txtFarmerName.Text = string.Empty;
+                txtFarmerSurname.Text = string.Empty;
+                txtCalenderDate.Text = string.Empty;
+                txtFarmerCell.Text = string.Empty;
+                txtFarmerEmail.Text = string.Empty;
+                txtFarmerUsername.Text = string.Empty;
+                txtFarmerPassword.Text = string.Empty;
+                txtFarmerConPassword.Text = string.Empty;
             }
             else
             {

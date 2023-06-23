@@ -52,8 +52,8 @@ namespace PROG7311_Part2
             else 
             {
                 lblLoginError.Text = "Your Username or Password is incorrect!";
-                txtUserName.Text = ""; /// Setting text field to empty.
-                txtPassword.Text = ""; /// Setting text field to empty.
+                txtUserName.Text = string.Empty; /// Setting text field to empty.
+                txtPassword.Text = string.Empty; /// Setting text field to empty.
             }
 
         }

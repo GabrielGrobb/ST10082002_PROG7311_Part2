@@ -110,6 +110,8 @@
     </style>
    </head>
     <body>
+
+    <!-- Navigation menu -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Farmers Market</a>
@@ -117,17 +119,25 @@
                     aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
+                
+                <!-- The items within the navigation bar -->
                 <div class="collapse navbar-collapse" id="navbarColor01">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item" >
+
+                            <!--Navigate to the table of farmers and their products-->
                             <a class="nav-link" href="EmployeePage.aspx">View Farmer</a>
                         </li>
                         <li class="nav-item">
+
+                            <!--Navigate to add a new farmer -->
                             <a class="nav-link active" href="#">Add New Farmer
                             <span class="visually-hidden">(current)</span>
                             </a>
                         </li>
                         <li class="nav-item" >
+
+                            <!--Navigate to the login page  -->
                             <a class="nav-link" href="Login.aspx">Logout</a>
                         </li>
                     </ul>
@@ -334,9 +344,9 @@
 
 
 
-<%--CODE ATTRIBUTION
+<!--CODE ATTRIBUTION
     
 Aurthor:  Serge Truth
 Webisite: Security Innovation, 2011/05/03. How to use regular expression to constrain input. [Online]
 Accessed on: 2023/05/29
-URL: https://blog.securityinnovation.com/blog/2011/05/how-to-use-regular-expressions-to-constrain-input.html  --%>
+URL: https://blog.securityinnovation.com/blog/2011/05/how-to-use-regular-expressions-to-constrain-input.html  -->

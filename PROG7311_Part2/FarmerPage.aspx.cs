@@ -67,8 +67,8 @@ namespace PROG7311_Part2
         #region /// A method to add an additional product.
         protected void btnAddNewProduct_Click(object sender, EventArgs e)
         {
-            lblerror.Text = "";
-            lblAdded.Text = "";
+            lblerror.Text = string.Empty;
+            lblAdded.Text = string.Empty;
             btnAddProduct.Visible = true;
             btnAddNewProduct.Visible = false;
         }
@@ -85,13 +85,13 @@ namespace PROG7311_Part2
             {
                 if (await myDB.addnewProductEntity(lblLoginUser.Text, txtProdCode.Text))
                 {
-                    txtProdCode.Text = ""; /// Clearing the product code textfield.
-                    txtProdName.Text = ""; /// Clearing the product name textfield.
-                    txtProdType.Text = ""; /// Clearing the product type textfield.
-                    txtProdPrice.Text = ""; /// Clearing the product price textfield.
-                    txtProdQuant.Text = ""; /// Clearing the product quantity textfield.
-                    txtProdDate.Text = ""; /// Clearing the product date textfield.
-                    lblerror.Text = ""; /// Clearing the error label text.
+                    txtProdCode.Text = string.Empty; /// Clearing the product code textfield.
+                    txtProdName.Text = string.Empty; /// Clearing the product name textfield.
+                    txtProdType.Text = string.Empty; /// Clearing the product type textfield.
+                    txtProdPrice.Text = string.Empty; /// Clearing the product price textfield.
+                    txtProdQuant.Text = string.Empty; /// Clearing the product quantity textfield.
+                    txtProdDate.Text = string.Empty; /// Clearing the product date textfield.
+                    lblerror.Text = string.Empty; /// Clearing the error label text.
                     lblAdded.Text = "Product Successfully Added"; /// Setting the product added label text.
                     lblAdded.Visible = true; /// Setting the product added label to visible.
                     btnAddProduct.Visible = false; /// hidding the add product button.

@@ -68,7 +68,7 @@ namespace PROG7311_Part2
             }
 
             /// sets the error label text to empty.
-            lblerror.Text = "";
+            lblerror.Text = string.Empty;
         }
 
         #endregion
@@ -89,9 +89,9 @@ namespace PROG7311_Part2
         #region /// A button to reset the gridview to default.
         protected void btnResetTable_Click(object sender, EventArgs e)
         {
-            txtMinDate.Text = ""; /// sets the text to empty.
-            txtMaxDate.Text = ""; /// sets the text to empty.
-            lblerror.Text = "";   /// sets the text to empty.
+            txtMinDate.Text = string.Empty; /// sets the text to empty.
+            txtMaxDate.Text = string.Empty; /// sets the text to empty.
+            lblerror.Text = string.Empty;   /// sets the text to empty.
             mydb.PopulateGridview(gvFarmerProducts); /// Populating the gridview. 
         }
 
